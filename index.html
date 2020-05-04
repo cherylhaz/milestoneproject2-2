@@ -30,7 +30,7 @@
     <label for="country">Choose a destination:</label>
     <select class="form-control" id="country">
     <option></option>
-      <option id="ireland">Ireland</option>
+      <option>Ireland</option>
       <option>Boulder, Colorado</option>
       <option>Portugal</option>
       <option>Switzerland</option>
@@ -57,12 +57,13 @@
       <option>4</option>
     </select>
   </div>
-  <button type="button" class="btn btn-success btn-lg search-button" onclick="search()">Search</button>
+  <button type="button" class="btn btn-success btn-lg search-button" onclick="search(country)">Search</button>
     </form>
     </section>
     <section class="container-fluid">
     <div id="map"></div>
-    <div id="data"></div>
+    <div id="name"></div>
+    <div id="summary"></div>
     </section>
     <footer class="container-fluid footer">
     <p>2020<br>Created by: Cheryl</p>
