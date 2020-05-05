@@ -10,6 +10,7 @@ function trailInformationHTML(returnedTrails){
     var resultsLength = returnedTrails.length;
     for (let returnedTrail of returnedTrails) {
     console.log(returnedTrail.name);
+    document.getElementById("name").innerHTML += `<tr>${returnedTrail.name}${returnedTrail.summary}<br></tr>`
 }}
 
 function search(event){
