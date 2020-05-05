@@ -4,10 +4,13 @@
 //var switzerland = (lat: 46.8182, lon: 8.2275)
 //var spain = (lat: 40.4637, lon: 3.7492)
 
-function trailInformationHTML(trails){
-    return `<span class="trail_name"><h2>${trailOptions.trails[0].name}</h2></span>
-    <span class="trail_info"><p>${trailOptions.trails[0].summary}<br> ${trailOptions.trails[0].location}</p></span>`;
-}
+
+function trailInformationHTML(returnedTrails){
+    var returnedTrails = trailOptions.trails;
+    var resultsLength = returnedTrails.length;
+    for (let returnedTrail of returnedTrails) {
+    console.log(returnedTrail.name);
+}}
 
 function search(event){
     var inputCountry = $("#country").val();
