@@ -1,4 +1,4 @@
-//var ireland = (lat: 53.1424, lon: 7.6921)
+
 //var italy = (lat: 41.8719, lon: 12.5674)
 //var portugal = (lat: 39.3999, lon: 8.2245)
 //var switzerland = (lat: 46.8182, lon: 8.2275)
