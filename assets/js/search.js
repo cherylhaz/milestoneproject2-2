@@ -7,10 +7,13 @@
 
 function trailInformationHTML(returnedTrails){
     var returnedTrails = trailOptions.trails;
-    var resultsLength = returnedTrails.length;
     for (let returnedTrail of returnedTrails) {
     console.log(returnedTrail.name);
-    document.getElementById("name").innerHTML += `<tr>${returnedTrail.name}${returnedTrail.summary}<br></tr>`
+    document.getElementById("name").innerHTML += `<span><a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}   </a></span>
+                                            <span style="font-style: italic">${returnedTrail.summary} </span>
+                                            <span><i class="fas fa-arrows-alt-h"></i> ${returnedTrail.length} km  </span>
+                                            <span><i class="fas fa-arrow-up"></i> ${returnedTrail.ascent} m  </span>
+                                            <span><i class="fas fa-star"></i> ${returnedTrail.stars}  <br></span>`
 }}
 
 function search(event){
