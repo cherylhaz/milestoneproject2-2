@@ -5,33 +5,10 @@ const irelandLon = -6.266155;
 //var switzerland = (lat: 46.8182, lon: 8.2275)
 //var spain = (lat: 40.4637, lon: 3.7492)
 
-
-function trailInformationHTML(returnedTrails){
-    var returnedTrails = trailOptions.trails;
-    for (let returnedTrail of returnedTrails) {
-
-var myLatlng = new google.maps.LatLng(`${returnedTrail.latitude}`,`${returnedTrail.longitude}`);
-
-
-   var marker = new google.maps.Marker({
-    position: myLatlng,
-    label: `${returnedTrails.indexOf(returnedTrail)}`,
-});
-marker.setMap(map);
-
-
-      
-    document.getElementById("name").innerHTML += `<span><strong>${returnedTrails.indexOf(returnedTrail)} </strong> <a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}   </a></span>
-                                            <span style="font-style: italic">${returnedTrail.summary} </span>
-                                            <span><i class="fas fa-arrows-alt-h"></i> ${returnedTrail.length} km  </span>
-                                            <span><i class="fas fa-arrow-up"></i> ${returnedTrail.ascent} m  </span>
-                                            <span><i class="fas fa-star"></i> ${returnedTrail.stars}  <br></span>`
-
-    }}
-
-
 function search(event){
     var inputCountry = $("#country").val();
+    var inputDistance = $("#distance").val();
+    var inputStars = $("#rating").val();
     if (!inputCountry){
         $("#name").html(`<h2>Please select a country</h2>`);
         return;
@@ -42,7 +19,8 @@ $.when(
         {key: "200735964-55871b76fd696d0af0539bd9bc3b2dd6",
         lat: 53.1424,
         lon: -6.266155,
-        minLength: 0
+        minLength: inputDistance,
+        minStars: inputStars
         }).then(
         function(response){
              trailOptions = response;
