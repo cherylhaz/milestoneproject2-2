@@ -1,4 +1,5 @@
-
+const irelandLat = 53.1424;
+const irelandLon = -6.266155;
 //var italy = (lat: 41.8719, lon: 12.5674)
 //var portugal = (lat: 39.3999, lon: 8.2245)
 //var switzerland = (lat: 46.8182, lon: 8.2275)
@@ -36,8 +37,13 @@ function search(event){
         return;
     } if(inputCountry = "Ireland"){
 $.when(
-    $.getJSON('https://www.hikingproject.com/data/get-trails?lat=40.0274&lon=-105.2519&maxDistance=10&key=200735964-55871b76fd696d0af0539bd9bc3b2dd6')
-    ).then(
+   
+    $.getJSON('https://www.hikingproject.com/data/get-trails',
+        {key: "200735964-55871b76fd696d0af0539bd9bc3b2dd6",
+        lat: 53.1424,
+        lon: -6.266155,
+        minLength: 0
+        }).then(
         function(response){
              trailOptions = response;
              console.log(response);
@@ -49,7 +55,4 @@ $.when(
                 console.log(errorResponse);
                 $("#name").html(`<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
             }
-        });
-}
-}
-
+        }))}}
