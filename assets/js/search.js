@@ -8,9 +8,11 @@
 function trailInformationHTML(returnedTrails){
     var returnedTrails = trailOptions.trails;
     for (let returnedTrail of returnedTrails) {
-   var myLatlng = new google.maps.LatLng(`${returnedTrail.latitude}`,`${returnedTrail.longitude}`);
+
+var myLatlng = new google.maps.LatLng(`${returnedTrail.latitude}`,`${returnedTrail.longitude}`);
    var marker = new google.maps.Marker({
     position: myLatlng,
+    label: `${returnedTrail.id}`,
     title:"Hello World!"
 });
 marker.setMap(map);
