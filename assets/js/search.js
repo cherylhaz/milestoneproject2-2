@@ -10,14 +10,17 @@ function trailInformationHTML(returnedTrails){
     for (let returnedTrail of returnedTrails) {
 
 var myLatlng = new google.maps.LatLng(`${returnedTrail.latitude}`,`${returnedTrail.longitude}`);
+
+
    var marker = new google.maps.Marker({
     position: myLatlng,
-    label: `${returnedTrail.id}`,
-    title:"Hello World!"
+    label: `${returnedTrails.indexOf(returnedTrail)}`,
 });
 marker.setMap(map);
+
+
       
-    document.getElementById("name").innerHTML += `<span><a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}   </a></span>
+    document.getElementById("name").innerHTML += `<span><strong>${returnedTrails.indexOf(returnedTrail)} </strong> <a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}   </a></span>
                                             <span style="font-style: italic">${returnedTrail.summary} </span>
                                             <span><i class="fas fa-arrows-alt-h"></i> ${returnedTrail.length} km  </span>
                                             <span><i class="fas fa-arrow-up"></i> ${returnedTrail.ascent} m  </span>
