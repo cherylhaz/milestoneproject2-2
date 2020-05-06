@@ -8,13 +8,21 @@
 function trailInformationHTML(returnedTrails){
     var returnedTrails = trailOptions.trails;
     for (let returnedTrail of returnedTrails) {
-    console.log(returnedTrail.name);
+   var myLatlng = new google.maps.LatLng(`${returnedTrail.latitude}`,`${returnedTrail.longitude}`);
+   var marker = new google.maps.Marker({
+    position: myLatlng,
+    title:"Hello World!"
+});
+marker.setMap(map);
+      
     document.getElementById("name").innerHTML += `<span><a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}   </a></span>
                                             <span style="font-style: italic">${returnedTrail.summary} </span>
                                             <span><i class="fas fa-arrows-alt-h"></i> ${returnedTrail.length} km  </span>
                                             <span><i class="fas fa-arrow-up"></i> ${returnedTrail.ascent} m  </span>
                                             <span><i class="fas fa-star"></i> ${returnedTrail.stars}  <br></span>`
-}}
+
+    }}
+
 
 function search(event){
     var inputCountry = $("#country").val();
