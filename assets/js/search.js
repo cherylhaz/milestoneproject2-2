@@ -1,9 +1,4 @@
 
-function getCountryCoordinates(selectedCountryLat){
-        
-    }
-
-
 function search(event, selectedCountryLat){
     var inputCountry = $("#country").val();
     var inputDistance = $("#distance").val();
@@ -26,7 +21,6 @@ $.when (
         }).then(
         function(response){
              trailOptions = response;
-             console.log(response);
             $("#name").html(trailInformationHTML(trailOptions));
         }, function(errorResponse){
             if (errorResponse.status === 404){
@@ -35,4 +29,5 @@ $.when (
                 console.log(errorResponse);
                 $("#name").html(`<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
             }
-        }))}}
+        }))
+}}

@@ -42,10 +42,25 @@
     min-height: 300px;
 }
 
-#data {
+/* Results */
+#search-results {
     padding: 25px;
     color: #000000;
+    font-size: 15px;
 }
 
-/* Legend */
+ #search-results #number {
+    font-weight: bold;
+}
+
+#search-results #summary{
+    font-style: italic;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* Results */
+#legend {
+text-align: center;
+}
 

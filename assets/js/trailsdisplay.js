@@ -9,9 +9,8 @@ var myLatLng = new google.maps.LatLng(`${returnedTrail.latitude}`,`${returnedTra
 
 });
 marker.setMap(map);
-
-    document.getElementById("name").innerHTML += `<span><strong>${returnedTrails.indexOf(returnedTrail)} </strong> <a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}   </a></span>
-                                            <span style="font-style: italic">${returnedTrail.summary} </span>
+    document.getElementById("search-results").innerHTML += `<span id ="number">${returnedTrails.indexOf(returnedTrail)} <a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}   </a></span>
+                                            <span id="summary">${returnedTrail.summary} </span>
                                             <span><i class="fas fa-arrows-alt-h"></i> ${returnedTrail.length} miles  </span>
                                             <span><i class="fas fa-arrow-up"></i> ${returnedTrail.ascent} m  </span>
                                             <span><i class="fas fa-star"></i> ${returnedTrail.stars}  <br></span>`

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Hiking Holiday</title>
+    <title>Holiday Hike Finder</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
@@ -19,7 +19,7 @@
 <body>
     <header>
     <div class="container-fluid header">
-    <h1>Hiking Holiday</h1>
+    <h1>Holiday Hike Finder</h1>
     </div>
     </header>
     <section id="subtitle">
@@ -58,23 +58,23 @@
       <option>4</option>
     </select>
   </div>
-  <button type="button" class="btn btn-success btn-lg search-button" onclick="search(country)">Search</button>
+  <button type="button" class="btn btn-success btn-lg search-button" onclick="search()">Search</button>
     </form>
     </section>
     <section class="container-fluid">
     <div class="table" id="map"></div>
-    <div id="name"></div>
-    <div id="legend">
+    <div id="search-results"></div>
+    <div class="container-fluid" id="legend">
         <h4>Legend</h4>
         <p>
-        <i class="fas fa-arrows-alt-h"></i> Trail length in miles
-        <i class="fas fa-arrow-up"></i> Trail ascent in meters
+        <i class="fas fa-arrows-alt-h"></i> Trail length
+        <i class="fas fa-arrow-up"></i> Trail ascent
         <i class="fas fa-star"></i> Trail Star rating
         </p>
     </div>
     </section>
     <footer class="container-fluid footer">
-    <p>2020<br>Created by: Cheryl</p>
+    <p>&copy; 2020<br>Created by: Cheryl</p>
     </footer>
     <script src= "https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBJuCqDWjBoOeFEnU2j866UaLYS8W3I0A&callback=initMap"></script>
