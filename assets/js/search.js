@@ -8,12 +8,12 @@ function search(event){
     var selectedCountryLon = countryLatLon.find(selectedCountryLon => selectedCountryLon.name === inputCountry);  //finds longitude for selected country from existing data. 
     //produces error if no country is entered and submit button is selected
     if (!inputCountry){
-        $("#name").html(`<h2>Please select a country</h2>`);
+        $("#search-results").html(`<h2>Please select a country</h2>`);
         return;
     } else {
     //sends data request to API
-$.when (
-   $.getJSON('https://www.hikingproject.com/data/get-trails', 
+        $.when (
+        $.getJSON('https://www.hikingproject.com/data/get-trails', 
         {key: "200735964-55871b76fd696d0af0539bd9bc3b2dd6",
         lat: selectedCountryLat.lat,
         lon: selectedCountryLon.lon,
