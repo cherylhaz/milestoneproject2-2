@@ -9,3 +9,12 @@ var map;
         });
         }
 //End of Google Code
+
+function deleteMarkers(){
+        clearMarkers();
+        markers = [];
+      }
+
+      function clearMarkers() {
+        setMapOnAll(null);
+      }

@@ -1,5 +1,7 @@
 
 function search(event){
+    $("#search-results").html(" ")
+
     var inputCountry = $("#country").val();
     var inputDistance = $("#distance").val();
     var inputStars = $("#rating").val();
