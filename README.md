@@ -24,52 +24,60 @@ so that a trail can be found which meets the very specific demands for informati
 The mockup for this project is [available here](assets/mockups/MilestoneProject2Mockupbmpr.pdf)
 
 <h2>Features</h2>
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
-<h2>Existing Features</h2>
-1. Users can assess hikes by a country of choice by selecting a country from the drop down list. The country parameter is the only required piece of data. 
+<h3>Existing Features</h3>
+1. Users can assess hikes by a country of choice by selecting a country from the drop down list. The country parameter is the only required piece of data.  
 
-2. If users are searching for a speciific length of hike then can also select this parameter from the form.
+2. If users are searching for a speciific length of hike then can also select this parameter from the form.  
 
-3. If users only want the best rated hikes, they can also select this from the third option along with the country of choice. 
+3. If users only want the best rated hikes, they can also select this from the third option along with the country of choice.  
 
 With all of these features, results are displayed beneath the map and the starting point of each hike is identified by a marker on the map.
 Users have access to a small amount of information on each hike on the display.  By clicking on the name of the hike, all information is available
 to the user from a third-party site.  
 
-The search functionality is available <assets/js/search.js>
-The map functionality is available <assets/js/maps.js>
-The display of serach results is available <assets/js/trailsdisplay.js>
+The search functionality is available <assets/js/search.js>  
+The map functionality is available <assets/js/maps.js>  
+The display of serach results is available <assets/js/trailsdisplay.js>  
 
 
 <h3>Features Left to Implement</h3>
-1.  Enchanced features will include extra search fields to provide the most accurate results.
-2.  Utilizing the Roads API the full route of the hike will display on the map instead of just the starting point, which is what currently displays.
+1.  Enchanced features will include extra search fields to provide the most accurate results.  
+2.  Utilizing the Roads API the full route of the hike will display on the map instead of just the starting point, which is what currently displays.  
 
 <h2>Technologies Used</h2>
-[HTML](https://html.spec.whatwg.org/multipage/) 
-The basic structure and display page was created using HTML.
-[**CSS**](https://www.w3.org/Style/CSS/Overview.en.html) 
-Design and enhancement of user experience was done with CSS to make it an easy to read and navigate site. 
-**JavaScript** http://www.ecmascript.org/
-**Bootstrap**https://getbootstrap.com/
-Used for the form and the layout of the page. 
-**Font Awesome** https://fontawesome.com/
-Used for the  icons in the search results to make them easier to read.
-**JQuery**https://jquery.com/
-Used to simplify DOM manipulation and some of the code.
+**[HTML](https://html.spec.whatwg.org/multipage/)**
+  The basic structure and display page was created using HTML.
+
+**[CSS](https://www.w3.org/Style/CSS/Overview.en.html)**
+  Design and enhancement of user experience was done with CSS to make it a site that is both easy to read and navigate. 
+
+**[JavaScript](http://www.ecmascript.org/)**
+  Used to provide the search, map and display functionality.
+
+**[JQuery](https://jquery.com/)**
+  Used to simplify the code in places and to simplify DOM movements.
+  
+**[Bootstrap](https://getbootstrap.com/)**
+  Used for the form and the layout of the page. 
+
+**[Font Awesome](https://fontawesome.com/)**
+  Used for the  icons in the search results to make them easier to read.
+
+
 
 <h2>Testing</h2>
 
 <h3>Map Functionality</h3>
-Upon opening of  page,  confirm map appears.
+1. Confirm map appears properly in all screen sizes and zooms correctly.  
+2. Once search is run, map markers should display on the screen properly and map should zoom to the area selected.
 
 <h3>Search Function</h3>
-1. Tried to submit an empty form and verify that the error message appears.
-2. Select country and no other options - search returns  results with correct formatting and map markers.
-3. Select Country and distance option - search returns  results utilizing the distance parameter with correct formatting and map markers.
-3. Select Country and star rating option - search returns  results utilizing the rating parameter with correct formatting and map markers.
-3. Select all three options- to confirm that the search returns  results utilizing all parameters with correct formatting and map markers.
+1. Tried to submit an empty form and verify that the error message appears.  
+2. Select country and no other options - search returns  results with correct formatting and map markers.  
+3. Select Country and distance option - search returns  results utilizing the distance parameter with correct formatting and map markers.  
+3. Select Country and star rating option - search returns  results utilizing the rating parameter with correct formatting and map markers.  
+3. Select all three options- to confirm that the search returns  results utilizing all parameters with correct formatting and map markers.  
 
 The page also has been tested at smaller screen sizes to ensure the same functionailty and an easy to use user interface across all media screen sizes.
 
@@ -88,11 +96,11 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 <h2>Credits</h2>
 <h3>Content</h3>
-The text for this project was created by me.
-The map data was obtained from {https://www.hikingproject.com/data)The Hiking Project</a>
-In some instances code was used from external sources include Google Maps tutorials, which is referenced directly in the code. 
+The hiking trail data was obtained from [The Hiking Project](https://www.hikingproject.com/data)  
+In some instances code was used from external sources include Google Maps tutorials, which is referenced directly in the code.  
+All other elements for this project are original work created by me.  
 
 <h3>Acknowledgements</h3>
-Inspiration from this project came from the sample project on The Code Institute https://codeinstitute.net/student-projects/website
-Specifically the work done by BEN HASSELGREN.
-Thank you to my mentor Akshat Garg for providing ideas and assistance in working on this project.
+Inspiration from this project came from the sample project on The Code Institute https://codeinstitute.net/student-projects/website  
+Specifically the work done by BEN HASSELGREN.  
+Thank you to my mentor Akshat Garg for providing ideas and assistance in working on this project.  
