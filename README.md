@@ -69,15 +69,15 @@ The display of serach results is available <assets/js/trailsdisplay.js>
 <h2>Testing</h2>
 
 <h3>Map Functionality</h3>
-1. Confirm map appears properly in all screen sizes and zooms correctly.  
-2. Once search is run, map markers should display on the screen properly and map should zoom to the area selected.
+1. Confirm map appears properly in all screen sizes and zooms correctly.<br>
+2. Once search is run, map markers should display on the screen properly and map should zoom to the area selected.<br>
 
 <h3>Search Function</h3>
-1. Tried to submit an empty form and verify that the error message appears.  
-2. Select country and no other options - search returns  results with correct formatting and map markers.  
-3. Select Country and distance option - search returns  results utilizing the distance parameter with correct formatting and map markers.  
-3. Select Country and star rating option - search returns  results utilizing the rating parameter with correct formatting and map markers.  
-3. Select all three options- to confirm that the search returns  results utilizing all parameters with correct formatting and map markers.  
+1. Tried to submit an empty form and verify that the error message appears.<br>
+2. Select country and no other options - search returns  results with correct formatting and map markers. <br> 
+3. Select Country and distance option - search returns  results utilizing the distance parameter with correct formatting and map markers.<br>  
+3. Select Country and star rating option - search returns  results utilizing the rating parameter with correct formatting and map markers. <br> 
+3. Select all three options- to confirm that the search returns  results utilizing all parameters with correct formatting and map markers. <br> 
 
 The page also has been tested at smaller screen sizes to ensure the same functionailty and an easy to use user interface across all media screen sizes.
 
@@ -96,11 +96,11 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 <h2>Credits</h2>
 <h3>Content</h3>
-The hiking trail data was obtained from [The Hiking Project](https://www.hikingproject.com/data)  
-In some instances code was used from external sources include Google Maps tutorials, which is referenced directly in the code.  
-All other elements for this project are original work created by me.  
+The hiking trail data was obtained from [The Hiking Project](https://www.hikingproject.com/data)<br>
+In some instances code was used from external sources include Google Maps tutorials, which is referenced directly in the code.  <br>
+All other elements for this project are original work created by me.  <br>
 
 <h3>Acknowledgements</h3>
-Inspiration from this project came from the sample project on The Code Institute https://codeinstitute.net/student-projects/website  
-Specifically the work done by BEN HASSELGREN.  
-Thank you to my mentor Akshat Garg for providing ideas and assistance in working on this project.  
+Inspiration from this project came from the sample project on [The Code Institute site](https://codeinstitute.net/student-projects/website)<br>
+Specifically the work done by BEN HASSELGREN.  <br>
+Thank you to my mentor Akshat Garg for providing ideas and assistance in working on this project.  <br>

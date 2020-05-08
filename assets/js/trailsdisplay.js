@@ -1,3 +1,4 @@
+var markers = [];
 function trailInformationHTML(returnedTrails){
     var returnedTrails = trailOptions.trails;
         
@@ -8,11 +9,15 @@ function trailInformationHTML(returnedTrails){
         var infowindow = new google.maps.InfoWindow({
             content: contentString
         });
+        
         var marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
             label: `${returnedTrails.indexOf(returnedTrail)}`,
         });
+        markers.push(marker);
+
+
     marker.addListener('click', function() {
     infowindow.open(map, marker);
   });
@@ -22,11 +27,24 @@ function trailInformationHTML(returnedTrails){
                                             <span><i class="fas fa-arrow-up"></i> ${returnedTrail.ascent} m  </span>
                                             <span><i class="fas fa-star"></i> ${returnedTrail.stars}  <br></span>`
 
-    } return;
+
+                                        }
+}
+
+
 function setMapOnAll(map) {
         for (var i = 0; i < markers.length; i++) {
           markers[i].setMap(map);
         }
       }
+function clearMarkers() {
+        setMapOnAll(null);
+      }
+function deleteMarkers(){
+        clearMarkers();
+        markers = [];
+      }
 
-}
+function clearMarkers() {
+        setMapOnAll(null);
+      }

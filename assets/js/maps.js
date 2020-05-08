@@ -9,7 +9,11 @@ var map;
         });
         }
 //End of Google Code
-
+function setMapOnAll(map) {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(map);
+        }
+      }
 function deleteMarkers(){
         clearMarkers();
         markers = [];
