@@ -1,66 +1,81 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i,700,800,800i,900&display=swap');
 
 /* Heading */
-.header, .footer {
-    background-color: grey;
+
+.header,
+.footer {
+	background-color: grey;
 }
+
 .header h1 {
-    color: white;
-    font-family: ('Montserrat', 800);
-    text-align: center;
-   padding-bottom: 10px;
+	color: white;
+	font-family: ('Montserrat', 800);
+	text-align: center;
+	padding-bottom: 10px;
 }
+
+
 /* Footer */
+
 .footer p {
-        color: white;
-    font-family: ('Montserrat', 400);
-    text-align: center;
-    padding-top: 10px;
+	color: white;
+	font-family: ('Montserrat', 400);
+	text-align: center;
+	padding-top: 10px;
 }
+
 
 /* Body */
 
 #subtitle p {
-    text-align: center;
-    font-family: ("Montserrat", 500i);
-    padding-top: 20px;
+	text-align: center;
+	font-family: ("Montserrat", 500i);
+	padding-top: 20px;
 }
+
+
 /* Form */
+
 .form-group {
-    font-family: ("Montserrat", 600);
-    margin-right: 20px;
-    margin-left: 20px;
+	font-family: ("Montserrat", 600);
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
 .search-button {
-    margin-left: 20px;
-    margin-bottom: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
 }
+
 
 /* Map */
+
 #map {
-    min-height: 300px;
+	min-height: 300px;
 }
 
+
 /* Results */
+
 #search-results {
-    padding: 25px;
-    color: #000000;
-    font-size: 15px;
+	padding: 25px;
+	color: #000000;
+	font-size: 15px;
 }
 
- #search-results #number {
-    font-weight: bold;
+#search-results #number {
+	font-weight: bold;
 }
 
-#search-results #summary{
-    font-style: italic;
-    padding-right: 10px;
-    padding-left: 10px;
+#search-results #summary {
+	font-style: italic;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
-/* Results */
+
+/* Legend */
+
 #legend {
-text-align: center;
+	text-align: center;
 }
-
