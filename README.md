@@ -85,6 +85,9 @@ You should also mention in this section any interesting bugs or problems you dis
 
 
 <h2>Deployment</h2>
+This project was deployed on May 9th using GitHub Pages to ensure that during the meeting with my mentor he could see how the site works.  
+Once deployed the URL was added to the Google API access.
+
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
 In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
@@ -98,6 +101,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 <h3>Content</h3>
 The hiking trail data was obtained from [The Hiking Project](https://www.hikingproject.com/data)<br>
 In some instances code was used from external sources include Google Maps tutorials, which is referenced directly in the code.  <br>
+It was a great help to work through parts of the video from FreeCodeCamp.org [Learn JavaScript- Full Course for Beginners](Video https://www.youtube.com/watch?v=PkZNo7MFNFg)
 All other elements for this project are original work created by me.  <br>
 
 <h3>Acknowledgements</h3>

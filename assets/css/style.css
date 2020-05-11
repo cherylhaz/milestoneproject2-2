@@ -4,7 +4,7 @@
 
 .header,
 .footer {
-	background-color: grey;
+	background-color: purple;
 }
 
 .header h1 {
@@ -12,6 +12,7 @@
 	font-family: ('Montserrat', 800);
 	text-align: center;
 	padding-bottom: 10px;
+    font-size: 40px;
 }
 
 
@@ -31,6 +32,7 @@
 	text-align: center;
 	font-family: ("Montserrat", 500i);
 	padding-top: 20px;
+    font-size: 30px;
 }
 
 
@@ -40,18 +42,22 @@
 	font-family: ("Montserrat", 600);
 	margin-right: 20px;
 	margin-left: 20px;
+    font-size: 20px;
+    display: inline-block;
+  width: 25%;
 }
 
 .search-button {
 	margin-left: 20px;
 	margin-bottom: 20px;
+    background-color: purple;
 }
 
 
 /* Map */
 
 #map {
-	min-height: 300px;
+	min-height: 500px;
 }
 
 
@@ -78,4 +84,5 @@
 
 #legend {
 	text-align: center;
+
 }
