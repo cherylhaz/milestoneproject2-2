@@ -27,11 +27,12 @@ function trailInformationHTML(returnedTrails) {
         var infowindow = new google.maps.InfoWindow({
             content: contentString
         });
-        document.getElementById("search-results").innerHTML += `<span id ="number">${label} <a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}   </a></span>
-                                            <span id="summary">${returnedTrail.summary} </span>
-                                            <span><i class="fas fa-arrows-alt-h"></i> ${returnedTrail.length} miles  </span>
-                                            <span><i class="fas fa-arrow-up"></i> ${returnedTrail.ascent} m  </span>
-                                            <span><i class="fas fa-star"></i> ${returnedTrail.stars}  <br></span>`
+        document.getElementById("search-results").innerHTML += `<div class="card"><img src="${returnedTrail.imgSmall}" alt="Hike Photo" style="width:100%"> 
+        <div class="container" style="width:100%"><h4>${label} <a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}</a></h4>
+                                          <p id="summary"> ${returnedTrail.summary}</p>
+                                           <p> <i class="fas fa-arrows-alt-h"></i> ${returnedTrail.length} miles
+                                            <i class="fas fa-arrow-up"></i> ${returnedTrail.ascent} m  
+                                            <i class="fas fa-star"></i> ${returnedTrail.stars} </p></div></div>`
 
 
     }

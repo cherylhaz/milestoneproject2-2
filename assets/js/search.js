@@ -36,6 +36,7 @@ function search(event) {
         $("#search-results").html(`<h2>Please select a country</h2>`);
         return;
     } else {
+        
         //sends data request to API
         $.when(
             $.getJSON('https://www.hikingproject.com/data/get-trails', {
@@ -48,14 +49,14 @@ function search(event) {
                 //based on response starts function to display results or produces an error message
                 function(response) {
                     trailOptions = response;
-                    $("#name").html(trailInformationHTML(trailOptions));
+                    $("search-results").html(trailInformationHTML(trailOptions));
                 },
                 function(errorResponse) {
                     if (errorResponse.status === 404) {
-                        $("#name").html(`<h2>I am sorry, nothing was found for ${inputCountry}</h2>`);
+                        $("search-results").html(`<h2>I am sorry, nothing was found for ${inputCountry}</h2>`);
                     } else {
                         console.log(errorResponse);
-                        $("#name").html(`<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
+                        $("#search-results").html(`<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
                     }
                 }))
     }
