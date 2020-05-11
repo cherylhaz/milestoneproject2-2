@@ -29,8 +29,8 @@ function search(event) {
         'lat': '46.204391',
         'lon': '6.143158'
     }];
-    var selectedCountryLat = countryLatLon.find(selectedCountryLat => selectedCountryLat.name === inputCountry); //finds latitude for selected country from existing data. 
-    var selectedCountryLon = countryLatLon.find(selectedCountryLon => selectedCountryLon.name === inputCountry); //finds longitude for selected country from existing data. 
+    var CountryLat = countryLatLon.find(CountryLat => CountryLat.name === inputCountry); //finds latitude for selected country from existing data. 
+    var CountryLon = countryLatLon.find(CountryLon => CountryLon.name === inputCountry); //finds longitude for selected country from existing data. 
     //produces error if no country is entered and submit button is selected
     if (!inputCountry) {
         $("#search-results").html(`<h2>Please select a country</h2>`);
@@ -41,8 +41,8 @@ function search(event) {
         $.when(
             $.getJSON('https://www.hikingproject.com/data/get-trails', {
                 key: "200735964-55871b76fd696d0af0539bd9bc3b2dd6",
-                lat: selectedCountryLat.lat,
-                lon: selectedCountryLon.lon,
+                lat: CountryLat.lat,
+                lon: CountryLon.lon,
                 minLength: inputDistance,
                 minStars: inputStars
             }).then(

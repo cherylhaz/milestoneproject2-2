@@ -14,19 +14,16 @@ function trailInformationHTML(returnedTrails) {
             label: `${label}`,
         });
         markers.push(marker);
-        //Code used from W3Schools https://www.w3schools.com/graphics/google_maps_events.asp
-        google.maps.event.addListener(marker, 'click', function() {
-            map.setZoom(9);
-            map.setCenter(marker.getPosition());
-        });
-        //end of Code
-        marker.addListener('click', function() {
-            infowindow.open(map, marker);
-        });
+
         var contentString = `<div id="content">${returnedTrail.name}</div>`;
         var infowindow = new google.maps.InfoWindow({
             content: contentString
         });
+            marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        map.setZoom(9);
+            map.setCenter(marker.getPosition());
+         });
         document.getElementById("search-results").innerHTML += `<div class="card"><img src="${returnedTrail.imgSmall}" alt="Hike Photo" style="width:100%"> 
         <div class="container" style="width:100%"><h4>${label} <a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}</a></h4>
                                           <p id="summary"> ${returnedTrail.summary}</p>

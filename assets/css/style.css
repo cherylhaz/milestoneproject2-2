@@ -73,6 +73,11 @@
   transition: 0.3s;
   max-width: 300px;
   margin: 20px;
+  display: inline-block;
+}
+
+.card img {
+    max-height: 200px;
 }
 
 .container {
@@ -101,5 +106,38 @@
 
 #legend {
 	text-align: center;
+}
 
+/* Media Queries */
+
+@media(max-width: 600px) {
+#subtitle p {
+	padding-top: 10px;
+    font-size: 20px;
+}
+.form-group {
+    font-size: 15px;
+    display: inline;
+}
+
+#search-form {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#form-control {
+padding-right: 20px;
+ padding-left: 20px;
+}
+.search-button {
+    margin-top: 10px;
+}
+
+#map {
+	min-height: 300px;
+}
+
+#legend {
+	padding-top: 20px;
+}
 }
