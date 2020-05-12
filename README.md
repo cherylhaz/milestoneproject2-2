@@ -102,7 +102,11 @@ In addition, if it is not obvious, you should also describe how to run your code
 <h2>Credits</h2>
 <h3>Content</h3>
 The hiking trail data was obtained from [The Hiking Project](https://www.hikingproject.com/data)<br>
-In some instances code was used from external sources include Google Maps tutorials, which is referenced directly in the code.  <br>
+In some instances code was used from external sources including: <br>
+Google Maps tutorials,   <br>
+Slack Overflow discussion boards, <br>
+W3 Schools website. <br>
+All of which is referenced directly in the code.
 It was a great help to work through parts of the video from FreeCodeCamp.org [Learn JavaScript- Full Course for Beginners](Video https://www.youtube.com/watch?v=PkZNo7MFNFg)
 All other elements for this project are original work created by me.  <br>
 

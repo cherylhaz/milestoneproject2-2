@@ -12,6 +12,7 @@ function trailInformationHTML(returnedTrails) {
             position: myLatLng,
             map: map,
             label: `${label}`,
+            
         });
         markers.push(marker);
 
@@ -19,7 +20,7 @@ function trailInformationHTML(returnedTrails) {
         var infowindow = new google.maps.InfoWindow({
             content: contentString
         });
-
+//Code used from Slack Overflow https://stackoverflow.com/questions/5736691/google-maps-infowindow-showing-on-wrong-marker
     marker.addListener('click', (function(markers,contentString,infowindow){ 
     return function() {
         infowindow.setContent(contentString);
@@ -28,9 +29,9 @@ function trailInformationHTML(returnedTrails) {
             map.setCenter(markers.getPosition());
     };
 })(markers,contentString,infowindow));  
+//End
 
-
-        document.getElementById("search-results").innerHTML += `<div class="card"><img src="${returnedTrail.imgSmall}" alt="Hike Photo" style="width:100%"> 
+        document.getElementById("search-results").innerHTML += `<div class="card"><img src="${returnedTrail.imgSmall}" alt="No Photo Available" style="width:100%"> 
         <div class="container" style="width:100%"><h4>${label} <a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}</a></h4>
                                           <p id="summary"> ${returnedTrail.summary}</p>
                                            <p> <i class="fas fa-arrows-alt-h"></i> ${returnedTrail.length} miles
