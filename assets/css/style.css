@@ -37,7 +37,12 @@
 
 
 /* Form */
-
+#form {
+      display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .form-group {
 	font-family: ("Montserrat", 600);
 	margin-right: 20px;
@@ -67,8 +72,8 @@
 
 
 /* Results */
+/* Code used from W3 Schools website*/
 .card {
-  /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   max-width: 300px;
@@ -79,26 +84,21 @@
 .card img {
     max-height: 200px;
 }
-
+/*End of borrowed code*/
 .container {
     padding: 2px 16px;
 }
 
-/*#search-results {
-	padding: 25px;
-	color: #000000;
-	font-size: 15px;
+.results-container {
+    display: flex;
+  align-items: center;
 }
 
-#search-results #number {
-	font-weight: bold;
-}*/
 
 #search-results #summary {
 	font-style: italic;
-	padding-right: 10px;
-	padding-left: 10px;
     overflow-wrap: break-word;
+
 }
 
 
@@ -120,7 +120,8 @@
     display: inline;
 }
 
-#search-form {
+
+/*#search-form {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -128,7 +129,7 @@
 #form-control {
 padding-right: 20px;
  padding-left: 20px;
-}
+}*/
 .search-button {
     margin-top: 10px;
 }
@@ -136,6 +137,8 @@ padding-right: 20px;
 #map {
 	min-height: 300px;
 }
+
+
 
 #legend {
 	padding-top: 20px;

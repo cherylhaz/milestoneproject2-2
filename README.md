@@ -81,7 +81,9 @@ The display of serach results is available <assets/js/trailsdisplay.js>
 
 The page also has been tested at smaller screen sizes to ensure the same functionailty and an easy to use user interface across all media screen sizes.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+<h3>Bugs</h3>
+There is an ongoing bug with the initMap function to display the map.  it is has a glitch where it works 3 times out of 5 and doesn't the other 
+times.  By refreshing the screen a couple of times the map will load.  This does need to be addressed but it wasn't able to be done prior to submission.
 
 
 <h2>Deployment</h2>

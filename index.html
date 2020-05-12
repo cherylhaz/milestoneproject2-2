@@ -26,6 +26,7 @@
             </p>
         </section>
         <section id="search-form">
+            <div class="container form">
             <form>
                 <div class="form-group">
                     <label for="country">Choose a Country:</label>
@@ -61,10 +62,14 @@
                 </div>
                 <button type="button" class="btn btn-success btn-lg search-button" onclick="deleteMarkers();search();">Search</button>
             </form>
+            </div>
         </section>
-        <section>
+        <section id="results">
             <div id="map"></div>
-            <div id="search-results"></div>
+            <div class="container results-container">
+            <div id="search-results">
+            </div>
+            </div>
             <div class="container-fluid" id="legend">
                 <h4>Legend</h4>
                 <p><i class="fas fa-arrows-alt-h"></i> Trail length <i class="fas fa-arrow-up"></i> Trail ascent <i class="fas fa-star"></i> Trail Star rating</p>
