@@ -72,6 +72,10 @@
 
 
 /* Results */
+
+#search-results {
+    text-align: center;
+}
 /* Code used from W3 Schools website*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -91,7 +95,6 @@
 
 .results-container {
     display: flex;
-  align-items: center;
 }
 
 

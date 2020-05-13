@@ -49,7 +49,6 @@ function search(event) {
         $("#search-results").html(`<h2>Please select a country</h2>`);
         return;
     } else {
-        
         //sends data request to API
         $.when(
             $.getJSON('https://www.hikingproject.com/data/get-trails', {
@@ -58,7 +57,9 @@ function search(event) {
                 lon: CountryLon.lon,
                 minLength: inputDistance,
                 minStars: inputStars
-            }).then(
+            },
+            $(".search-results").html(`<div id="loader"><img src="assets/images/loading_image.gif" alt="loading..."></div>`)
+            ).then(
                 //based on response starts function to display results or produces an error message
                 function(response) {
                     trailOptions = response;
@@ -74,3 +75,4 @@ function search(event) {
                 }))
     }
 }
+

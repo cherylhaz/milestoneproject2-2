@@ -107,6 +107,7 @@ Google Maps tutorials,   <br>
 Slack Overflow discussion boards, <br>
 W3 Schools website. <br>
 All of which is referenced directly in the code.
+The loading image gif is from <https://icons8.com/preloaders/>
 It was a great help to work through parts of the video from FreeCodeCamp.org [Learn JavaScript- Full Course for Beginners](Video https://www.youtube.com/watch?v=PkZNo7MFNFg)
 All other elements for this project are original work created by me.  <br>
 
