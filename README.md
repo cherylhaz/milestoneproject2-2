@@ -21,7 +21,7 @@ so that a trail can be found which meets the very specific demands for informati
 
 
 <h3>MockUp</h3>
-The mockup for this project is [available here](assets/mockups/MilestoneProject2Mockupbmpr.pdf)
+The mockup for this project is [available here](/assets/mockups/MilestoneProject2Mockupbmpr.pdf)
 
 <h2>Features</h2>
 
@@ -36,9 +36,9 @@ With all of these features, results are displayed beneath the map and the starti
 Users have access to a small amount of information on each hike on the display.  By clicking on the name of the hike, all information is available
 to the user from a third-party site.  
 
-The search functionality is available <assets/js/search.js>  
-The map functionality is available <assets/js/maps.js>  
-The display of search results is available <assets/js/trailsdisplay.js>  
+The search functionality is available </assets/js/search.js>  
+The map functionality is available </assets/js/maps.js>  
+The display of search results is available </assets/js/trailsdisplay.js>  
 
 
 <h3>Features Left to Implement</h3>
@@ -48,7 +48,7 @@ The display of search results is available <assets/js/trailsdisplay.js>
 
 <h2>Technologies Used</h2>
 **[HTML](https://html.spec.whatwg.org/multipage/)**
-  The basic structure and display page was created using HTML.
+  The basic structure and display page was created using HTML.<br>
 
 **[CSS](https://www.w3.org/Style/CSS/Overview.en.html)**
   Design and enhancement of user experience was done with CSS to make it a site that is both easy to read and navigate. 
@@ -106,7 +106,7 @@ Slack Overflow discussion boards, <br>
 W3 Schools website. <br>
 All of which is referenced directly in the code.<br>
 The loading image gif is from <https://icons8.com/preloaders/> <br>
-It was a great help to work through parts of the video from FreeCodeCamp.org [Learn JavaScript- Full Course for Beginners](Video https://www.youtube.com/watch?v=PkZNo7MFNFg)
+It was a great help to work through parts of the video from FreeCodeCamp.org [Learn JavaScript- Full Course for Beginners Video](https://www.youtube.com/watch?v=PkZNo7MFNFg)
 All other elements for this project are original work created by me.  <br>
 
 <h3>Acknowledgements</h3>
