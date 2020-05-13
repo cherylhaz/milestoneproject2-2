@@ -38,12 +38,13 @@ to the user from a third-party site.
 
 The search functionality is available <assets/js/search.js>  
 The map functionality is available <assets/js/maps.js>  
-The display of serach results is available <assets/js/trailsdisplay.js>  
+The display of search results is available <assets/js/trailsdisplay.js>  
 
 
 <h3>Features Left to Implement</h3>
 1.  Enchanced features will include extra search fields to provide the most accurate results.  
-2.  Utilizing the Roads API the full route of the hike will display on the map instead of just the starting point, which is what currently displays.  
+2.  Updates to the search function to input any destination and return resutls, not just the pre-selection options currently available.
+3.  Utilizing the Roads API the full route of the hike will display on the map instead of just the starting point, which is what currently displays.  
 
 <h2>Technologies Used</h2>
 **[HTML](https://html.spec.whatwg.org/multipage/)**
@@ -64,13 +65,14 @@ The display of serach results is available <assets/js/trailsdisplay.js>
 **[Font Awesome](https://fontawesome.com/)**
   Used for the  icons in the search results to make them easier to read.
 
-
-
 <h2>Testing</h2>
 
 <h3>Map Functionality</h3>
 1. Confirm map appears properly in all screen sizes and zooms correctly.<br>
 2. Once search is run, map markers should display on the screen properly and map should zoom to the area selected.<br>
+**Bugs**
+There is an ongoing bug with the initMap function to display the map.  it is has a glitch where it works 3 times out of 5 and doesn't the other 
+times.  By refreshing the screen a couple of times the map will load.  This does need to be addressed but it wasn't able to be done prior to submission.
 
 <h3>Search Function</h3>
 1. Tried to submit an empty form and verify that the error message appears.<br>
@@ -81,23 +83,19 @@ The display of serach results is available <assets/js/trailsdisplay.js>
 
 The page also has been tested at smaller screen sizes to ensure the same functionailty and an easy to use user interface across all media screen sizes.
 
-<h3>Bugs</h3>
-There is an ongoing bug with the initMap function to display the map.  it is has a glitch where it works 3 times out of 5 and doesn't the other 
-times.  By refreshing the screen a couple of times the map will load.  This does need to be addressed but it wasn't able to be done prior to submission.
-
 
 <h2>Deployment</h2>
-This project was deployed on May 9th using GitHub Pages to ensure that during the meeting with my mentor he could see how the site works.  
+This project was deployed on May 9th using GitHub Pages to ensure that during the meeting with my mentor so he could see how the site works.  
 Once deployed the URL was added to the Google API access.
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+The majority of the final site is the same as when originally deployed, the functionality and bones of the project have remained the same.
+Small updates and improvements have been made to produce a better site.  
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+**GitHub Repository**
+Early in the project I struggeled with getting the search function to work.  I was using an unsuitable method.  After struggling for a week, 
+I decided to copy the Repository and try a different approach, this ultimatly worked and is the project presented.
+The original repository can be found at <https://github.com/cherylhaz/milestoneproject2>
+I have realized that this was not the best way to handle this and it should have been forked instead.  
 
 <h2>Credits</h2>
 <h3>Content</h3>
@@ -106,8 +104,8 @@ In some instances code was used from external sources including: <br>
 Google Maps tutorials,   <br>
 Slack Overflow discussion boards, <br>
 W3 Schools website. <br>
-All of which is referenced directly in the code.
-The loading image gif is from <https://icons8.com/preloaders/>
+All of which is referenced directly in the code.<br>
+The loading image gif is from <https://icons8.com/preloaders/> <br>
 It was a great help to work through parts of the video from FreeCodeCamp.org [Learn JavaScript- Full Course for Beginners](Video https://www.youtube.com/watch?v=PkZNo7MFNFg)
 All other elements for this project are original work created by me.  <br>
 
