@@ -87,6 +87,7 @@
 
 .card img {
     max-height: 200px;
+    border: 1px solid #2e7d32;
 }
 /*End of borrowed code*/
 .container {
@@ -101,7 +102,6 @@
 #search-results #summary {
 	font-style: italic;
     overflow-wrap: break-word;
-
 }
 
 
@@ -123,16 +123,6 @@
     display: inline;
 }
 
-
-/*#search-form {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-#form-control {
-padding-right: 20px;
- padding-left: 20px;
-}*/
 .search-button {
     margin-top: 10px;
 }
