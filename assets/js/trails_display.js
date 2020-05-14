@@ -1,6 +1,6 @@
 var markers = [];
 
-function trailInformationHTML(returnedTrails) {
+function trailInformationHTML() {
     var returnedTrails = trailOptions.trails;
 
     for (let returnedTrail of returnedTrails) {
@@ -44,12 +44,8 @@ function trailInformationHTML(returnedTrails) {
 //Code from Google maps documentation https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 function setMapOnAll(map) {
     for (var i = 0; i < markers.length; i++) {
-        markers[i].setMap(map);
+                markers[i].setMap(map);
     }
-}
-
-function clearMarkers() {
-    setMapOnAll(null);
 }
 
 function deleteMarkers() {

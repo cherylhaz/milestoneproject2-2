@@ -1,4 +1,4 @@
-function search(event) {
+function search() {
     $("#search-results").html(" ");
 
     var inputCountry = $("#country").val();
@@ -35,6 +35,6 @@ function search(event) {
                         console.log(errorResponse);
                         $("#search-results").html(`<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
                     }
-                }))
+                }));
     }
 }
