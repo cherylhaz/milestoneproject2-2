@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i,700,800,800i,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
 
 /* Heading */
 
 .header,
 .footer {
-	background-color: #4527a0;
+	background-color: #8d73dd;
 }
 
 .header h1 {
 	color: white;
-	font-family: ('Montserrat', 800);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
 	text-align: center;
 	padding-bottom: 10px;
-    font-size: 40px;
+	font-size: 40px;
 }
 
 
@@ -20,7 +21,7 @@
 
 .footer p {
 	color: white;
-	font-family: ('Montserrat', 400);
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	padding-top: 10px;
 }
@@ -28,40 +29,43 @@
 
 /* Body */
 
-#subtitle p {
+#subtitle h5 {
 	text-align: center;
-	font-family: ("Montserrat", 500i);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 	padding-top: 20px;
-    font-size: 30px;
+	font-size: 30px;
 }
 
 
 /* Form */
+
 #form {
-      display: flex;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	padding-right: 15px;
 }
+
 .form-group {
-	font-family: ("Montserrat", 600);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
 	margin-right: 20px;
 	margin-left: 20px;
-    font-size: 20px;
-    display: inline-block;
-  width: 25%;
+	font-size: 20px;
+	display: inline-block;
+	width: 25%;
 }
 
 .search-button {
 	margin-left: 20px;
 	margin-bottom: 20px;
-    background-color: #4527a0;
+	background-color: #4527a0;
 }
 
 .search-button:hover {
-    background-color: #2e7d32;
+	background-color: #2e7d32;
 }
-
 
 
 /* Map */
@@ -74,34 +78,39 @@
 /* Results */
 
 #search-results {
-    text-align: center;
+	text-align: center;
 }
+
+
 /* Code used from W3 Schools website*/
+
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  max-width: 300px;
-  margin: 20px;
-  display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	max-width: 300px;
+	margin: 20px;
+	display: inline-block;
 }
 
 .card img {
-    max-height: 200px;
-    border: 1px solid #2e7d32;
+	max-height: 200px;
+	border: 1px solid #2e7d32;
 }
+
+
 /*End of borrowed code*/
+
 .container {
-    padding: 2px 16px;
+	padding: 2px 16px;
 }
 
 .results-container {
-    display: flex;
+	display: flex;
 }
-
 
 #search-results #summary {
 	font-style: italic;
-    overflow-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 
@@ -109,31 +118,28 @@
 
 #legend {
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
 }
+
 
 /* Media Queries */
 
 @media(max-width: 600px) {
-#subtitle p {
-	padding-top: 10px;
-    font-size: 20px;
-}
-.form-group {
-    font-size: 15px;
-    display: inline;
-}
-
-.search-button {
-    margin-top: 10px;
-}
-
-#map {
-	min-height: 300px;
-}
-
-
-
-#legend {
-	padding-top: 20px;
-}
+	#subtitle p {
+		padding-top: 10px;
+		font-size: 20px;
+	}
+	.form-group {
+		font-size: 15px;
+		display: inline;
+	}
+	.search-button {
+		margin-top: 10px;
+	}
+	#map {
+		min-height: 300px;
+	}
+	#legend {
+		padding-top: 20px;
+	}
 }

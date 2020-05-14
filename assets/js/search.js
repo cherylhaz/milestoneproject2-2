@@ -1,6 +1,5 @@
-
 function search(event) {
-    $("#search-results").html(" ")
+    $("#search-results").html(" ");
 
     var inputCountry = $("#country").val();
     var inputDistance = $("#distance").val();
@@ -16,13 +15,13 @@ function search(event) {
         //sends data request to API
         $.when(
             $.getJSON('https://www.hikingproject.com/data/get-trails', {
-                key: "200735964-55871b76fd696d0af0539bd9bc3b2dd6",
-                lat: CountryLat.lat,
-                lon: CountryLon.lon,
-                minLength: inputDistance,
-                minStars: inputStars
-            },
-            $(".search-results").html(`<div id="loader"><img src="assets/images/loading_image.gif" alt="loading..."></div>`)
+                    key: "200735964-55871b76fd696d0af0539bd9bc3b2dd6",
+                    lat: CountryLat.lat,
+                    lon: CountryLon.lon,
+                    minLength: inputDistance,
+                    minStars: inputStars
+                },
+                $(".search-results").html(`<div id="loader"><img src="assets/images/loading_image.gif" alt="loading..."></div>`)
             ).then(
                 //based on response starts function to display results or produces an error message
                 function(response) {
@@ -39,4 +38,3 @@ function search(event) {
                 }))
     }
 }
-
