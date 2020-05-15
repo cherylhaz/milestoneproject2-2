@@ -29,15 +29,19 @@ function trailInformationHTML() {
             };
         })(markers, contentString, infowindow));
         //End
-
-        document.getElementById("search-results").innerHTML += `<div class="card"><img src="${returnedTrail.imgSmall}" alt="No Photo Available" style="width:100%"> 
-        <div class="container" style="width:100%"><h4>${label} <a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}</a></h4>
-                                          <p id="summary"> ${returnedTrail.summary}</p>
-                                           <p> <i class="fas fa-arrows-alt-h"></i> ${returnedTrail.length} miles
-                                            <i class="fas fa-arrow-up"></i> ${returnedTrail.ascent} m  
-                                            <i class="fas fa-star"></i> ${returnedTrail.stars} </p></div></div>`;
-
-
+        //Code provided by Akshat Garg - Utilises a generic image if no image returned from the API
+            let imageURL = "assets/images/placeholder_image.png";
+        if(returnedTrail.imgSmall !== "") {
+            imageURL = returnedTrail.imgSmall;
+        };
+//End
+//Displays the returned data on the screen in the card format
+        document.getElementById("search-results").innerHTML += 
+        `<div class="card"><img src="${imageURL}" alt="Hike Photo" style="width:100%"> 
+        <div class="container" style="width:100%">
+        <h4>${label} <a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}</a></h4>
+        <p id="summary"> ${returnedTrail.summary}</p>
+        <p> <i class="fas fa-arrows-alt-h"></i> ${returnedTrail.length} miles <i class="fas fa-arrow-up"></i> ${returnedTrail.ascent} m  <i class="fas fa-star"></i> ${returnedTrail.stars} </p></div></div>`;
     }
 }
 
