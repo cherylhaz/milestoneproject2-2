@@ -1,4 +1,4 @@
-<h1>Hiking Holiday</h1>
+<h1>Holiday Hike Finder</h1>
 This project for the 2nd milestone project is focused on searching for appropiate hikes in an area you are visiting or even around home.  
 
 Preliminary research is essential to enjoying a holiday abroad or even a staycation and this site will assist users in their search for 
@@ -101,11 +101,13 @@ I have realized that this was not the best way to handle this and it should have
 <h3>Content</h3>
 The hiking trail data was obtained from [The Hiking Project](https://www.hikingproject.com/data)<br>
 In some instances code was used from external sources including: <br>
-Google Maps tutorials,   <br>
-Slack Overflow discussion boards, <br>
-W3 Schools website. <br>
-All of which is referenced directly in the code.<br>
-The loading image gif is from <https://icons8.com/preloaders/> <br>
+-Google Maps tutorials,   <br>
+-Slack Overflow discussion boards, <br>
+-W3 Schools website. <br>
+-All of which is referenced directly in the code.<br>
+-The loading image gif is from https://icons8.com/preloaders/ <br>
+-The placeholder image is from https://www.iconfinder.com/icons/211677/image_icon <br>
+<br>
 It was a great help to work through parts of the video from FreeCodeCamp.org [Learn JavaScript- Full Course for Beginners Video](https://www.youtube.com/watch?v=PkZNo7MFNFg)
 All other elements for this project are original work created by me.  <br>
 
