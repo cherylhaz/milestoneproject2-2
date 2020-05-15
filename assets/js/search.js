@@ -1,6 +1,6 @@
 function search() {
     $("#search-results").html(" ");
-
+    $(".message").html(" ");
     var inputCountry = $("#country").val();
     var inputDistance = $("#distance").val();
     var inputStars = $("#rating").val();
@@ -9,9 +9,10 @@ function search() {
     var CountryLon = countryLatLon.find(CountryLon => CountryLon.name === inputCountry); //finds longitude for selected country from existing data. 
     //produces error if no country is entered and submit button is selected
     if (!inputCountry) {
-        $("#search-results").html(`<h2>Please select a country</h2>`);
+        $(".message").html(`<h3>Please select a country</h3>`);
         return;
     } else {
+                        $(".search-results").html(`<div id="loader"><img src="assets/images/loading_image.gif" alt="loading..."></div>`)
         //sends data request to API
         $.when(
             $.getJSON('https://www.hikingproject.com/data/get-trails', {
@@ -21,19 +22,17 @@ function search() {
                     minLength: inputDistance,
                     minStars: inputStars
                 },
-                $(".search-results").html(`<div id="loader"><img src="assets/images/loading_image.gif" alt="loading..."></div>`)
+
             ).then(
                 //based on response starts function to display results or produces an error message
-                function(response) {
+                function(response, errorResponse) {
+                    if (response === 404) {
+                        $(".message").html(`<h4>I am sorry, nothing was found based on your parameters.  Please choose less options and try again.</h4>`);
+                    
+                    } else {
                     trailOptions = response;
                     $("search-results").html(trailInformationHTML(trailOptions));
-                },
-                function(errorResponse) {
-                    if (errorResponse.status === 404) {
-                        $("search-results").html(`<h2>I am sorry, nothing was found for ${inputCountry}</h2>`);
-                    } else {
-                        console.log(errorResponse);
-                        $("#search-results").html(`<h2>Error: ${errorResponse.responseJSON.message}</h2>`);
+                    console.log(response);
                     }
                 }));
     }

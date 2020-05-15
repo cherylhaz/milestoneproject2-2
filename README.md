@@ -70,16 +70,15 @@ The display of search results is available </assets/js/trailsdisplay.js>
 <h3>Map Functionality</h3>
 1. Confirm map appears properly in all screen sizes and zooms correctly.<br>
 2. Once search is run, map markers should display on the screen properly and map should zoom to the area selected.<br>
-**Bugs**
-There is an ongoing bug with the initMap function to display the map.  it is has a glitch where it works 3 times out of 5 and doesn't the other 
-times.  By refreshing the screen a couple of times the map will load.  This does need to be addressed but it wasn't able to be done prior to submission.
+
 
 <h3>Search Function</h3>
 1. Tried to submit an empty form and verify that the error message appears.<br>
 2. Select country and no other options - search returns  results with correct formatting and map markers. <br> 
 3. Select Country and distance option - search returns  results utilizing the distance parameter with correct formatting and map markers.<br>  
-3. Select Country and star rating option - search returns  results utilizing the rating parameter with correct formatting and map markers. <br> 
-3. Select all three options- to confirm that the search returns  results utilizing all parameters with correct formatting and map markers. <br> 
+4. Select Country and star rating option - search returns  results utilizing the rating parameter with correct formatting and map markers. <br> 
+5. Select all three options- to confirm that the search returns  results utilizing all parameters with correct formatting and map markers. <br> 
+6. Select a location and add a 20 mi search with high ratings - there are very few options at this length and when no results are found, a message will appear. <br>
 
 The page also has been tested at smaller screen sizes to ensure the same functionailty and an easy to use user interface across all media screen sizes.
 

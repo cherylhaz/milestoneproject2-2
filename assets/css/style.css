@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800&display=swap');
 
+.page {
+    position: relative;
+    height: 100vh;
+}
+
+.content {
+    padding-bottom: 80px;
+}
 /* Heading */
 
 .header,
@@ -18,6 +26,12 @@
 
 
 /* Footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
 
 .footer p {
 	color: white;
@@ -78,6 +92,12 @@
 
 
 /* Results */
+.message {
+    text-align: center;
+font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+    color: #a00037;
+}
 
 #search-results {
 	text-align: center;
@@ -119,8 +139,10 @@
 /* Legend */
 
 #legend {
-	text-align: center;
 	font-family: 'Montserrat', sans-serif;
+    position: relative;
+    bottom: 80px;
+    text-align: center;
 }
 
 
