@@ -26,9 +26,9 @@ The mockup for this project is [available here](/assets/mockups/MilestoneProject
 <h2>Features</h2>
 
 <h3>Existing Features</h3>
-1. Users can assess hikes by a country of choice by selecting a country from the drop down list. The country parameter is the only required piece of data.  
+1. Users can assess hikes by a country of choice by selecting a country from the drop down list. The country parameter is the only required piece of data.
 
-2. If users are searching for a speciific length of hike then can also select this parameter from the form.  
+2. If users are searching for a speciific length of hike then can also select this parameter from the form.
 
 3. If users only want the best rated hikes, they can also select this from the third option along with the country of choice.  
 
@@ -42,9 +42,9 @@ The display of search results is available </assets/js/trailsdisplay.js>
 
 
 <h3>Features Left to Implement</h3>
-1.  Enchanced features will include extra search fields to provide the most accurate results.  
-2.  Updates to the search function to input any destination and return resutls, not just the pre-selection options currently available.
-3.  Utilizing the Roads API the full route of the hike will display on the map instead of just the starting point, which is what currently displays.  
+1.  Enchanced features will include extra search fields to provide the most accurate results.  <br>
+2.  Updates to the search function to input any destination and return resutls, not just the pre-selection options currently available.<br>
+3.  Utilizing the Roads API the full route of the hike will display on the map instead of just the starting point, which is what currently displays.  <br>
 
 <h2>Technologies Used</h2>
 **[HTML](https://html.spec.whatwg.org/multipage/)**
@@ -78,7 +78,7 @@ The display of search results is available </assets/js/trailsdisplay.js>
 3. Select Country and distance option - search returns  results utilizing the distance parameter with correct formatting and map markers.<br>  
 4. Select Country and star rating option - search returns  results utilizing the rating parameter with correct formatting and map markers. <br> 
 5. Select all three options- to confirm that the search returns  results utilizing all parameters with correct formatting and map markers. <br> 
-6. Select a location and add a 20 mi search with high ratings - there are very few options at this length and when no results are found, a message will appear. <br>
+6. Select Barcelona, Spain and add a 20 mi distance option - there are no results with this search and the error message appears. <br>
 
 The page also has been tested at smaller screen sizes to ensure the same functionailty and an easy to use user interface across all media screen sizes.
 
@@ -88,13 +88,13 @@ This project was deployed on May 9th using GitHub Pages to ensure that during th
 Once deployed the URL was added to the Google API access.
 
 The majority of the final site is the same as when originally deployed, the functionality and bones of the project have remained the same.
-Small updates and improvements have been made to produce a better site.  
+Small updates and improvements have been made to produce a better site and bugs have been removed.
 
 **GitHub Repository**
 Early in the project I struggeled with getting the search function to work.  I was using an unsuitable method.  After struggling for a week, 
 I decided to copy the Repository and try a different approach, this ultimatly worked and is the project presented.
 The original repository can be found at <https://github.com/cherylhaz/milestoneproject2>
-I have realized that this was not the best way to handle this and it should have been forked instead.  
+I have learned that this was not the best way to handle this and it should have been forked instead.  
 
 <h2>Credits</h2>
 <h3>Content</h3>

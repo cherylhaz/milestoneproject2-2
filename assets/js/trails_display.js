@@ -30,14 +30,14 @@ function trailInformationHTML() {
         })(markers, contentString, infowindow));
         //End
         //Code provided by Akshat Garg - Utilises a generic image if no image returned from the API
-            let imageURL = "assets/images/placeholder_image.png";
-        if(returnedTrail.imgSmall !== "") {
+        let imageURL = "assets/images/placeholder_image.png";
+        if (returnedTrail.imgSmall !== "") {
             imageURL = returnedTrail.imgSmall;
-        };
-//End
-//Displays the returned data on the screen in the card format
-        document.getElementById("search-results").innerHTML += 
-        `<div class="card"><img src="${imageURL}" alt="Hike Photo" style="width:100%"> 
+        }
+        //End
+        //Displays the returned data on the screen in the card format
+        document.getElementById("search-results").innerHTML +=
+            `<div class="card"><img src="${imageURL}" alt="Hike Photo" style="width:100%"> 
         <div class="container" style="width:100%">
         <h4>${label} <a href="${returnedTrail.url}" target="_blank">${returnedTrail.name}</a></h4>
         <p id="summary"> ${returnedTrail.summary}</p>
@@ -48,7 +48,7 @@ function trailInformationHTML() {
 //Code from Google maps documentation https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 function setMapOnAll(map) {
     for (var i = 0; i < markers.length; i++) {
-                markers[i].setMap(map);
+        markers[i].setMap(map);
     }
 }
 

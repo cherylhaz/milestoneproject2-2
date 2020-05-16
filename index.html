@@ -4,9 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
         <title>Holiday Hike Finder</title>
-
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
@@ -21,67 +19,68 @@
             </div>
         </header>
         <div class="content">
-        <section id="subtitle">
-            <h5>
-                Looking to hike on your next holiday?<br />
-                Search for the perfect trail to enjoy on your vacation.
-            </h5>
-        </section>
-        <section id="search-form">
-            <div class="container form">
-                <form>
-                    <div class="form-group">
-                        <label for="country">Location:</label>
-                        <select class="form-control" id="country">
-                            <option label=" "></option>
-                            <option>Amsterdam,Netherlands</option>
-                            <option>Barcelona,Spain</option>
-                            <option>Dublin,Ireland</option>
-                            <option>Geneva,Switzerland</option>
-                            <option>Lisbon,Portugal</option>
-                            <option>Madrid,Spain</option>
-                            <option>Mayo,Ireland</option>
-                            <option>Porto,Portugal</option>
-                            <option>Riomaggiore,Italy</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="distance">Minimum length (mi):</label>
-                        <select class="form-control" id="distance">
-                            <option label=" "></option>
-                            <option>2</option>
-                            <option>5</option>
-                            <option>10</option>
-                            <option>20</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="rating">Minimum star rating: </label>
-                        <select class="form-control" id="rating">
-                            <option label=" "></option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                    </div>
-                    <button type="button" class="btn btn-success btn-lg search-button" onclick="deleteMarkers();search();">Search</button>
-                </form>
-            </div>
+            <section id="subtitle">
+                <h5>
+                    Looking to hike on your next holiday?<br />
+                    Search for the perfect trail to enjoy on your vacation.
+                </h5>
+            </section>
+            <section id="search-form">
+                <div class="container form">
+                    <form>
+                        <div class="form-group">
+                            <label for="country">Location:</label>
+                            <select class="form-control" id="country">
+                                <option label=" "></option>
+                                <option>Amsterdam,Netherlands</option>
+                                <option>Barcelona,Spain</option>
+                                <option>Dublin,Ireland</option>
+                                <option>Geneva,Switzerland</option>
+                                <option>Lisbon,Portugal</option>
+                                <option>Madrid,Spain</option>
+                                <option>Mayo,Ireland</option>
+                                <option>Porto,Portugal</option>
+                                <option>Riomaggiore,Italy</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="distance">Minimum length (mi):</label>
+                            <select class="form-control" id="distance">
+                                <option label=" "></option>
+                                <option>2</option>
+                                <option>5</option>
+                                <option>10</option>
+                                <option>20</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="rating">Minimum star rating: </label>
+                            <select class="form-control" id="rating">
+                                <option label=" "></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-success btn-lg search-button" onclick="deleteMarkers();search();">Search</button>
+                    </form>
+                </div>
+            </section>
             <div class="message"></div>
-        </section>
-        <section id="results">
-            <div id="map"></div>
-            <div class="container results-container">
-                <div id="search-results"></div>
-            </div>
-             </div>
-            <div class="container-fluid" id="legend">
-                <h4>Legend</h4>
-                <p><i class="fas fa-arrows-alt-h"></i> Trail length <i class="fas fa-arrow-up"></i> Trail ascent <i class="fas fa-star"></i> Trail Star rating</p>
-            </div>
-        </section>
-       
+
+            <section id="results">
+                <div id="map"></div>
+                <div class="container results-container">
+                    <div id="search-results"></div>
+                </div>
+            </section>
+        </div>
+        <div class="container-fluid" id="legend">
+            <h4>Legend</h4>
+            <p><i class="fas fa-arrows-alt-h"></i> Trail length <i class="fas fa-arrow-up"></i> Trail ascent <i class="fas fa-star"></i> Trail Star rating</p>
+        </div>
+
         <footer class="container-fluid footer">
             <p>
                 &copy; 2020<br />
