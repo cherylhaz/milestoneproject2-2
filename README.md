@@ -36,9 +36,9 @@ With all of these features, results are displayed beneath the map and the starti
 Users have access to a small amount of information on each hike on the display.  By clicking on the name of the hike, all information is available
 to the user from a third-party site.  
 
-The search functionality is available </assets/js/search.js>  
-The map functionality is available </assets/js/maps.js>  
-The display of search results is available </assets/js/trailsdisplay.js>  
+The search functionality is available /assets/js/search.js <br>
+The map functionality is available /assets/js/maps.js <br>
+The display of search results is available /assets/js/trailsdisplay.js <br>
 
 
 <h3>Features Left to Implement</h3>
@@ -88,7 +88,7 @@ This project was deployed on May 9th using GitHub Pages to ensure that during th
 Once deployed the URL was added to the Google API access.
 
 The majority of the final site is the same as when originally deployed, the functionality and bones of the project have remained the same.
-Small updates and improvements have been made to produce a better site and bugs have been removed.
+Small updates and improvements have been made to produce a better site and all known bugs have been removed.
 
 **GitHub Repository**
 Early in the project I struggeled with getting the search function to work.  I was using an unsuitable method.  After struggling for a week, 
