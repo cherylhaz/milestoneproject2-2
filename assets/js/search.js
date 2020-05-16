@@ -26,11 +26,12 @@ function search() {
             ).then(
                 //based on response starts function to display results or produces an error message
                 function(response, errorResponse) {
-                    if (response === 404) {
-                        $(".message").html(`<h4>I am sorry, nothing was found based on your parameters.  Please choose less options and try again.</h4>`);
-                    
+                     trailOptions = response;
+                    if (trailOptions.trails.length === 0) {
+                        $(".message").html(`<h4>Sorry, nothing was found based on your parameters.  Please choose less options and try again.</h4>`);
+                        console.log(errorResponse)
                     } else {
-                    trailOptions = response;
+
                     $("search-results").html(trailInformationHTML(trailOptions));
                     console.log(response);
                     }
